@@ -1,0 +1,32 @@
+{
+  "name": "mmall-fe",
+  "version": "1.0.0",
+  "description": "mmall前端代码",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ge1124683115/mmall-fe.git"
+  },
+  "author": "xiaowang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ge1124683115/mmall-fe/issues"
+  },
+  "homepage": "https://github.com/ge1124683115/mmall-fe#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.9",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.20.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
