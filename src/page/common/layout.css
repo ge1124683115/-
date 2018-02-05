@@ -1,0 +1,83 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #f6f6f6;
+    font:12px/1.5 tohoma, Arial, Microsoft YaHei,sans-serif;
+}
+li{
+    list-style:none;
+}
+img{
+    display: block;
+    border:none;
+}
+label{
+    cursor:pointer;
+}
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+/*定宽布局*/
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/*全局通用样式*/
+.hide{
+    display:none;
+}
+.link{
+    color:#999;
+    text-decoration:none;
+    cursor: pointer;
+}
+.link:hover{
+    color:#e80012;
+}
+/*和link的样式差不多，但是不能点击*/
+.link-text{
+    color:#999;
+    text-decoration: none;
+}
+
+/*btn*/
+.btn{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    vertical-align:middle;  /*清除其他元素带来的影响*/
+    background: #e80012;
+    font-size:21px;
+    font-weight: bold;
+    color:#fff;
+    outline:none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid #e80012;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size:12px;
+    padding: 0 10px;
+}
+
+/*loading*/
+.loading{
+    display: block;
+    height: 64px;
+    width: 64px;
+    margin: 10px auto;
+    opacity: 0.6;
+    border-radius: 5px;
+    border:1px solid #ddd;
+    background: url("../../image/icon/loading.gif");
+}

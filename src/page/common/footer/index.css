@@ -1,0 +1,16 @@
+.footer{
+    padding-bottom: 10px;
+}
+.footer .links{
+    line-height: 30px;
+    color:#666;
+    text-align: center;
+}
+.footer .links .link{
+    padding: 0 12px;
+}
+.footer .copyright{
+    line-height: 30px;
+    text-align: center;
+    color:#666;
+}

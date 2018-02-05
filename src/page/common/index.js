@@ -5,4 +5,6 @@
 * @Last Modified time: 2018-02-04 10:27:27
 */
 'use strict';
-console.log('i am a global');
+require('./layout.css');
+require('./footer/index.css');
+require('node_modules/font-awesome/css/font-awesome.min.css');

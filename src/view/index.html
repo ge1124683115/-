@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<%= require('html-loader!./layout/html-head.html') %>
+<head>
+  <%= require('html-loader!./layout/head-common.html') %>
+  <title>happymmall电商学习项目</title>
+</head>
+
 <body>
- hello worlsdsadsafdsafdsaffsad111111111111111111111111111111
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<%= require('html-loader!./layout/nav.html')%>
+<%= require('html-loader!./layout/header.html')%>
+<div class="page-wrap-main w">
+  <%= require('html-loader!./layout/nav-side.html')%>
+  <div class="content with-nav">test</div>
+</div>
+<%= require('html-loader!./layout/footer.html')%>
 </body>
 </html>
