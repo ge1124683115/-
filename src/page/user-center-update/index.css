@@ -1,0 +1,14 @@
+.form-line{
+    height: 30px;
+    line-height: 30px;
+}
+.form-line .label{
+    width: 60px;
+    font-size:14px;
+    display: inline-block;
+    text-align: center;
+}
+.form-line .input{
+    outline: none;
+    padding: 2px;
+}

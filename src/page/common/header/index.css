@@ -7,6 +7,7 @@
     color:#e80012;
     display: block;
     font-weight: bold;
+    text-decoration: none;
 }
 .header .search-con{
     padding: 40px 0 30px 200px;
@@ -24,4 +25,14 @@
     position: absolute;
     height: 44px;
     width: 90px;
+}
+
+/*面包屑导航*/
+.crumb{
+    height: 50px;
+    line-height: 50px;
+    background: #eeeeee;
+    font-size:14px;
+    color:#888;
+    border-top:2px solid #e80012;
 }

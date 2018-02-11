@@ -74,7 +74,7 @@ var _mm={
    },
    //统一登录处理、统一跳转
    doLogin:function () {
-      window.location.href='./login.html?redirect='+encodeURIcomponent(window.location.href);
+      window.location.href='./user-login.html?redirect='+encodeURIComponent(window.location.href);
    },
    //跳转到主页
    goHome:function () {

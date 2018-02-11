@@ -1,0 +1,74 @@
+.page-wrap{
+    background: #e80012;
+    padding:40px 0 20px 0;
+}
+.page-wrap .user-con{
+    background: #ffffff;
+    padding: 10px 0 10px 0;
+    width: 400px;
+    margin: 0 auto;
+}
+.page-wrap .user-con .user-title{
+    text-align: center;
+    font-size:20px;
+    padding:10px 0;
+    border-bottom:1px solid #ccc;
+}
+.page-wrap .user-box{
+    padding:0 20px 20px 20px;
+}
+.page-wrap .user-con .error-item{
+    position: relative;
+    background: #fde9e9;
+    padding: 4px 0 4px 40px;
+    color:#e80012;
+    border:1px solid #e80012;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    display: none;
+}
+.page-wrap .user-con .error-item .error-icon{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -7px;
+}
+
+/*用户名和密码*/
+.user-con .user-item{
+    margin-bottom: 20px;
+    position: relative;
+}
+.user-con .user-item .user-label{
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    text-align: center;
+    width: 40px;
+    line-height: 36px;
+    color:#d3d3d3;
+    background: #f3f3f3;
+    font-size: 18px;
+    border-right: 1px solid #d3d3d3;
+}
+.user-con .user-item .user-content{
+    padding: 10px 0 10px 50px;
+    width: 306px;
+    outline: none;
+}
+.user-con .btn-submit{
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+/*链接的样式*/
+.user-con .link-item{
+    text-align: right;
+    margin-top: 10px;
+}
+.user-con .link-item .link{
+    margin-left: 10px;
+}

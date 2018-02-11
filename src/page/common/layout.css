@@ -41,6 +41,24 @@ input[type=checkbox]{
 .link:hover{
     color:#e80012;
 }
+/*容器*/
+.panel{
+    padding: 10px;
+    background: #fff;
+    margin-top: 10px;
+}
+.panel .panel-title{
+    font-size:16px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 10px;
+    color:#666;
+    font-weight: bold;
+}
+.panel .panel-body{
+    font-size:12px;
+    padding: 10px 0;
+    overflow: hidden;
+}
 /*和link的样式差不多，但是不能点击*/
 .link-text{
     color:#999;
@@ -80,4 +98,8 @@ input[type=checkbox]{
     border-radius: 5px;
     border:1px solid #ddd;
     background: url("../../image/icon/loading.gif");
+}
+
+.nav-simple .logo{
+    text-decoration: none;
 }
