@@ -6,7 +6,7 @@ var navSide         = require('page/common/nav-side/index.js');
 var _mm             = require('util/mm.js');
 var _user           = require('service/user-service.js');
 
-// page 逻辑部分
+//page 逻辑部分
 var page = {
    init:function () {
       this.onLoad();

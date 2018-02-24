@@ -4,7 +4,150 @@
 * @Last Modified by:   Administrator
 * @Last Modified time: 2018-02-04 10:36:43
 */
-body{
-	background: #000;
-    color:red;
+.keywords-list{
+    background: #666;
+    width: 240px;
+    height: 326px;
+    float: left;
+    padding: 10px 0;
+    margin-right: 10px;
+}
+.keywords-list .keywords-item{
+    font-size: 16px;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.keywords-list .keywords-item:hover{
+    background:#888888;
+}
+.keywords-list .keywords-item .link{
+    margin-right: 6px;
+    color:#fff;
+}
+.keywords-list .keywords-item .link:hover{
+    color:#e80012;
+}
+/*banner-con*/
+.banner-con{
+    width: 830px;
+    background: #eeeeee;
+    float: left;
+    height: 346px;
+}
+.banner-con .loading{
+    margin-top: 140px;
+}
+.banner-con .banner-img{
+    width: 100%;
+    height: 346px;
+}
+.banner .dots{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+/*下面控制的小圆点*/
+.banner .dots{
+    text-align: center;
+}
+.banner .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+/*前一张和后一张的按钮*/
+.banner-con .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+.banner-con .banner-arrow{
+    height: 50px;
+    width: 30px;
+    position: absolute;
+    top: 140px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: #ccc;
+    background:rgba(0,0,0,0.2);
+    font-size:30px;
+    color:#fff;
+}
+.banner-con .banner-arrow:hover{
+    background:rgba(0,0,0,0.5);
+    background: #aaa;
+}
+.banner-con .banner-arrow.prev{
+    left: 5px;
+}
+.banner-con .banner-arrow.next{
+    right: 5px;
+}
+
+/*floor-wrap*/
+.floor-wrap .floor-title{
+    height: 50px;
+    line-height: 50px;
+    color:#d58717;
+    border-bottom: 1px solid #d58717;
+    font-weight: normal;
+    font-size:20px;
+}
+/*对每层的floor-title的颜色进行更改*/
+.floor-wrap:nth-child(2) .floor-title{
+    color:#33bb88;
+    border-bottom: 1px solid #33bb88;
+}
+.floor-wrap:nth-child(3) .floor-title{
+    color:#a93931;
+    border-bottom: 1px solid #a93931;
+}
+.floor-wrap:nth-child(4) .floor-title{
+    color:#488bad;
+    border-bottom: 1px solid #488bad;
+}
+.floor-wrap:nth-child(5) .floor-title{
+    color:#642663;
+    border-bottom: 1px solid #642663;
+}
+.floor-wrap .floor-list{
+    overflow: hidden;
+    margin-right: -20px;
+}
+.floor-wrap .floor-item{
+    position: relative;
+    width: 200px;
+    height: 220px;
+    background: #ffffff;
+    float: left;
+    margin: 15px 20px 15px 0;
+    cursor: pointer;
+}
+.floor-wrap .floor-item:hover{
+    box-shadow: 1px 1px 1px #888888;
+}
+.floor-wrap .floor-item .floor-text{
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    color:#555555;
+}
+.floor-wrap .floor-item img{
+    height: 75%;
+    position: absolute;
+    bottom: 8px;
+    left: 18px;
 }

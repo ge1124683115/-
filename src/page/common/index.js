@@ -7,4 +7,4 @@
 'use strict';
 require('./layout.css');
 require('./footer/index.css');
-require('node_modules/font-awesome/css/font-awesome.min.css');
+require('node_modules/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.min.css');

@@ -45,7 +45,7 @@ var page={
       //验证成功
       if(validateResult.status){
          _user.login(formData,function (res) {
-            window.location.href = _mm.getUrlParam('redirect')||'./index.html';
+            window.location.href = _mm.getUrlParam('redirect')||'./demo.html';
          },function (errMsg) {
             formError.show(errMsg);
          });

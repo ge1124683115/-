@@ -1,0 +1,83 @@
+.sort-con{
+    overflow: hidden;
+}
+.sort-con .sort-item{
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
+    width: 56px;
+    display: inline-block;
+    border: 1px solid #888888;
+    float: left;
+    margin-right: -1px;
+    text-align: center;
+    margin-top: 14px;
+    cursor: pointer;
+    position: relative;
+}
+.sort-con .sort-item.active{
+    background: #c60023;
+    border:1px solid #c60023;
+    color:#fff;
+}
+
+.sort-con .sort-item .fa-sort-down{
+    position: absolute;
+    top: 5px;
+    right: 19px;
+}
+.sort-con .sort-item.up .fa-sort-down{
+    opacity: 0.7;
+}
+.sort-con .sort-item.down .fa-sort-up{
+    opacity: 0.7;
+}
+
+
+.p-list-con{
+    margin-top: 15px;
+    margin-right: -20px;
+    overflow: hidden;
+}
+.p-list-con .p-item{
+    width: 180px;
+    position: relative;
+    float: left;
+    margin: 10px 20px 10px 0;
+    padding: 10px;
+    background: #ffffff;
+}
+.p-list-con .p-item .p-img-con{
+    width: 180px;
+    height: 200px;
+}
+.p-list-con .p-item .p-img-con .p-img{
+    width: 100%;
+    height: 100%;
+}
+.p-list-con .p-item .p-price-con{
+    font-size:18px;
+    color:#d58717;
+}
+.p-list-con .p-item .p-name-con{
+    height: 40px;
+    overflow: hidden;
+}
+.p-list-con .p-item .p-name-con .p-name{
+    font-size:12px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 20px;
+    color:#666;
+}
+
+/*错误信息*/
+.err-tip{
+    height: 60px;
+    line-height: 60px;
+    color:#d58717;
+    font-size:18px;
+    background: #eeeeee;
+    text-align: center;
+    font-weight: bold;
+}
