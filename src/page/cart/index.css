@@ -1,0 +1,154 @@
+.cart-table{
+    width: 100%;
+    border:1px solid #ebebeb;
+    margin-top: 10px;
+    border-collapse:collapse;
+}
+
+.cart-header{
+    background: #eeeeee;
+}
+.cart-header .cart-cell{
+    height: 40px;
+    line-height: 40px;
+}
+.cart-header .cell-check{
+    text-align: left;
+    width: 6%;
+    padding-left: 20px;
+}
+.cart-header .cell-info{
+    text-align: left;
+    width: 35%;
+    padding-left: 100px;
+}
+.cart-header .cell-price{
+    text-align: center;
+    width: 18%;
+    padding-left: 130px;
+}
+.cart-header .cell-count{
+    text-align: center;
+    width: 17%;
+    padding-left: 120px;
+}
+.cart-header .cell-total{
+    text-align: center;
+    width: 15%;
+    padding-left: 60px;
+}
+.cart-header .cell-opera{
+    text-align: center;
+    width: 10%;
+    padding-left: 10px;
+}
+
+.cart-list .cart-cell{
+    height: 40px;
+    line-height: 40px;
+}
+.cart-list .cell-check{
+    text-align: left;
+    width: 6%;
+    padding-left: 20px;
+}
+.cart-list .cell-img{
+    text-align: left;
+    width: 10%;
+}
+.cart-list .cell-img .p-img{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin: 10px 0;
+    border:1px solid #ddd;
+}.cart-list .cell-info{
+     text-align: left;
+     width: 25%;
+ }
+.cart-list .cell-price{
+    text-align: center;
+    width: 18%;
+    padding-left: 130px;
+}
+.cart-list .cell-count{
+    text-align: center;
+    width: 20%;
+    padding-left: 100px;
+}
+.cart-list .cell-count .count-input{
+    width: 60px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    outline: none;
+    color:#333333;
+    border: 1px solid #dddddd;
+}
+.cart-list .cell-count .count-btn{
+    border:1px solid #dddddd;
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    line-height: 26px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.cart-list .cell-total{
+    text-align: center;
+    width: 13%;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.cart-list .cell-opera{
+    text-align: center;
+    width: 10%;
+}
+
+.cart-footer{
+    position: relative;
+    overflow: hidden;
+    line-height: 50px;
+    background: #eeeeee;
+}
+.cart-footer .select-con{
+    float: left;
+    padding-left: 20px;
+}
+.cart-footer .delete-con{
+    float: left;
+    padding-left: 40px;
+}
+.cart-footer .submit-con{
+    float: right;
+}
+.cart-footer .submit-con .submit-total{
+    font-size: 18px;
+    font-weight: bold;
+    color: #c60023;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.cart-footer .submit-con .btn-submit{
+    width: 70px;
+    padding: 0 4px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+/*错误信息*/
+.err-tip{
+    height: 60px;
+    line-height: 60px;
+    color:#d58717;
+    font-size:18px;
+    background: #eeeeee;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}

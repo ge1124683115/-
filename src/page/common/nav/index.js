@@ -1,12 +1,14 @@
 'use strict';
 require('./index.css');
 var _mm     = require('util/mm.js');
-var _user   =require('service/user-service.js');
+var _user   = require('service/user-service.js');
+var _cart   = require('service/cart-service');
 
 var nav={
    init:function () {
       this.bindEvent();
       this.loadUserInfo();
+      this.loadCartCount();
       return this;
    },
    bindEvent:function () {
@@ -36,5 +38,13 @@ var nav={
          // 什么也不做
       });
    },
+   //加载购物车的数量
+   loadCartCount : function () {
+      _cart.getCartCount(function (res) {
+         $('.cart-count').text(res||0);
+      },function (errMsg) {
+         $('.cart-count').text(0);
+      });
+   }
 };
 module.exports=nav.init();

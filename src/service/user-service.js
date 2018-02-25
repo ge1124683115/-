@@ -104,6 +104,7 @@ var _user={
          error   : reject,
       })
    },
+   //退出登录
    logout : function (resolve, reject) {
       _mm.request({
          url    : _mm.getServerUrl('/user/logout.do'),
