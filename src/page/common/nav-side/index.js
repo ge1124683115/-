@@ -2,7 +2,7 @@
 require('./index.css');
 var _mm             = require('util/mm.js');
 var templateIndex   = require('./index.string');
-// 侧边导航
+//侧边导航
 var navSide = {
    option : {
       name : '',

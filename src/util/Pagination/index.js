@@ -34,9 +34,9 @@ Pagination.prototype.render = function(userOption){
    // 合并选项
    this.option = $.extend({}, this.defaultOption, userOption);
    // 判断容器是否为合法的jquery对象
-   if(!(this.option.container instanceof jQuery)){
-      return;
-   }
+   // if(!(this.option.container instanceof jQuery)){
+   //    return;
+   // }
    // 判断是否只有1页
    if(this.option.pages <= 1){
       return;

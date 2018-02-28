@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+   function createFunction() {
+      var result = new Array();
+      for(var i=0;i<10;i++){
+         result[i] = function () {
+            return i;
+         };
+      }
+      return result;
+   };
+   var func = createFunction();
+   for (var i = 0;i<func.length;i++){
+      console.log(func[i]());
+   }
+</script>
+</body>
+</html>

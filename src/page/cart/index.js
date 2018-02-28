@@ -118,7 +118,7 @@ var page={
       //提交购物车
       $(document).on('click','.btn-submit',function () {
          if(_this.data.cartInfo&&_this.data.cartInfo.cartTotalPrice>0){
-            window.location.href='./confirm.html';
+            window.location.href='./order-confirm.html';
          }else{
             _mm.errorTip('请选择提交的商品');
          }

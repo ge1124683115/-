@@ -1,0 +1,178 @@
+.address-item,.address-add{
+    width: 200px;
+    padding: 6px;
+    float: left;
+    border:3px dashed #cccccc;
+    margin: 6px 10px 6px 0;
+    cursor: pointer;
+}
+.address-item:hover,.address-add:hover{
+    background: #fafafa;
+}
+.address-item.active{
+    border:3px dashed #c60023;
+}
+.address-title{
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px solid #ddd;
+    color:#666;
+    overflow: hidden;
+}
+.address-detail{
+    height: 40px;
+    line-height: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    color:#666;
+    word-break:break-all;
+    display:-webkit-box;
+    -webkit-line-clamp:2;
+    -webkit-box-orient:vertical;
+}
+.address-opera{
+    text-align: right;
+    visibility:hidden;
+}
+.address-item:hover .address-opera{
+    visibility:visible;
+}
+.address-opera .link{
+    margin-right: 5px;
+}
+.address-add .address-new{
+    text-align: center;
+    color:#cccccc;
+    padding: 5px 0;
+}
+.address-add .address-new .fas{
+    font-size: 50px;
+    line-height: 50px;
+}
+.address-add .address-new .text{
+    font-size:12px;
+    line-height: 24px;
+}
+
+
+.product-table{
+    width: 100%;
+    margin: 10px 0;
+    border-collapse:collapse;
+}
+.product-table th,
+.product-table td{
+    border-bottom: 1px solid #cccccc;
+}
+.product-table .cell-img{
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+}.product-table .cell-img .p-img{
+     width: 80px;
+     height: 80px;
+    border:1px solid #ddd;
+ }
+.product-table .cell-info{
+    width: 30%;
+    -ms-text-align-last: right;
+    text-align: left;
+}
+.product-table .cell-price{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-count{
+    width: 20%;
+    text-align: center;
+}
+.product-table .cell-total{
+    width: 20%;
+    text-align: center;
+}
+
+
+
+.submit-con{
+    background: #eeeeee;
+    text-align: right;
+}
+.submit-con .submit-total{
+    font-size: 20px;
+    color:#c60023;
+    font-weight: bold;
+    margin-right: 30px;
+    vertical-align:middle;
+}
+
+
+/*弹出的编辑和新建提示框*/
+.modal{
+    position:fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #eeeeee;
+    background: rgba(0,0,0,.4);
+    z-index: 999;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.modal .modal-container{
+    width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 2px;
+}
+.modal-container .modal-header{
+    position: relative;
+    padding: 15px;
+    border-bottom: 1px solid #bbbbbb;
+}
+.modal-container .modal-title{
+    font-size:14px;
+}
+.modal-container .modal-header .close{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.modal-container .modal-body{
+    padding: 15px;
+}
+
+.form .form-line{
+    margin: 5px 0;
+    overflow: hidden;
+}
+.form-line .label{
+    height: 30px;
+    line-height: 30px;
+    width: 80px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+.form-line .label .required{
+    color:red;
+}
+.form-line .form-item{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    margin-right: 10px;
+    font-size:14px;
+    outline: none;
+}
+.form-line .btn{
+    margin-left: 90px;
+    width: 108px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 18px;
+    padding: 4px 4px;
+}
