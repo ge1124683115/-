@@ -1,0 +1,5 @@
+<p class="payment-tips">订单提交成功，请您尽快支付！ 订单号：1519868509285</p>
+<p class="payment-tips scan">请使用支付宝扫描如下二维码进行支付：</p>
+<div class="img-con">
+  <img src="{{qrUrl}}" alt="支付二维码" class="cr-code">
+</div>
