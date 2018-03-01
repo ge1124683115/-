@@ -16,6 +16,7 @@ var getHtmlConfig = function (name,title) {
    return{
       template : './src/view/'+name+'.html',
       filename : 'view/'+name+'.html',
+      favicon  : './favicon.ico',
       title    : title,
       inject   : true,
       hash     : true,
@@ -40,13 +41,14 @@ var config = {
       'user-center'        : ['./src/page/user-center/index.js'],
       'user-center-update' : ['./src/page/user-center-update/index.js'],
       'user-pass-update'   : ['./src/page/user-pass-update/index.js'],
-      'result'             : ['./src/page/result/index.js']
+      'result'             : ['./src/page/result/index.js'],
+      'about'              : ['./src/page/about/index.js']
 	},
 	output: {
-		filename: 'js/[name].js',
-		path: path.resolve(__dirname, 'dist'),
-      publicPath :'/dist'
-	},
+		filename   : 'js/[name].js',
+      path       : path.resolve(__dirname, './dist'),
+      publicPath :'dev' === WEBPACK_ENV ? '//s.happymmall.com/mmall-fe/dist/' : '/dist/'
+},
 	externals: {
 		'jquery':'window.jQuery'
 	},
@@ -95,10 +97,11 @@ var config = {
       new HtmlWebpackPlugin(getHtmlConfig('user-center','个人中心')),
       new HtmlWebpackPlugin(getHtmlConfig('user-center-update','个人中心信息更新')),
       new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','更改密码')),
-      new HtmlWebpackPlugin(getHtmlConfig('result','操作结果'))
+      new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
+      new HtmlWebpackPlugin(getHtmlConfig('about','关于我们'))
 	]
 };
-// if('dev' === WEBPACK_ENV){
-//    config.entry.common.push('webpack-dev-server/client?http://localhost:8080/');
-// }
+if('dev' === WEBPACK_ENV){
+   config.entry.common.push('webpack-dev-server/client?http://localhost:8080/');
+}
 module.exports = config;
